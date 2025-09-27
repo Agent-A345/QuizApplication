@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <h1>Online Quiz Application</h1>
+            <p>Choose a category to start your quiz</p>
+            <div class="categories">
+                <button class="category-btn" data-category="general">General Knowledge</button>
+                <button class="category-btn" data-category="science">Science</button>
+                <button class="category-btn" data-category="sports">Sports</button>
+                <button class="category-btn" data-category="history">History</button>
+                <button class="category-btn" data-category="geography">Geography</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <h2 id="category-title"></h2>
+                <div class="quiz-info">
+                    <span id="question-counter">Question 1 of 10</span>
+                    <span id="score-display">Score: 0</span>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <h3 id="question-text"></h3>
+                <div class="answers">
+                    <button class="answer-btn" data-answer="A" id="answer-A"></button>
+                    <button class="answer-btn" data-answer="B" id="answer-B"></button>
+                    <button class="answer-btn" data-answer="C" id="answer-C"></button>
+                    <button class="answer-btn" data-answer="D" id="answer-D"></button>
+                </div>
+            </div>
+            
+            <div class="quiz-controls">
+                <button id="next-btn" class="control-btn" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <h2>Quiz Complete!</h2>
+            <div class="results-content">
+                <div class="score-circle">
+                    <span id="final-score">0</span>
+                    <span class="score-total">/ 10</span>
+                </div>
+                <h3 id="result-message"></h3>
+                <p id="result-details"></p>
+            </div>
+            <div class="result-actions">
+                <button id="restart-btn" class="control-btn">Try Another Category</button>
+                <button id="same-category-btn" class="control-btn">Retry Same Category</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
