@@ -43,7 +43,7 @@ git clone https://github.com/Agent-A345/QuizApplication.git
 - Backend with user login & quiz history
 - Add more categories and difficulty levels
 
-## License
+## 📝 License
 This project is licensed under the MIT License.
 
 
